@@ -1,0 +1,11 @@
+#key mappings:
+# Insert your prefered key mappings here.
+map <a-w> previousTab
+unmap <a-e>
+map <a-e> nextTab
+map t Vomnibar.activateInNewTab
+map O Vomnibar.activateEditUrl
+map T Vomnibar.activateEditUrlInNewTab
+map b Vomnibar.activateTabSelection
+map d removeTab
+map y copyCurrentUrl
