@@ -1,0 +1,22 @@
+"1.0b5.1 (created: 2011/02/15 20:42:05)
+
+loadplugins '\.(js|penta)$'
+" map -modes=n,v -count gr gT
+
+map -modes=n,v -count <A-e> gt
+map -modes=n,v -count <A-w> gT
+map -m i,c,t <C-v> <Pass> 
+map -m i,c,t,n,v <C-c> <yank-selection>
+
+" Edit text fields like in vim
+" set textmode
+set insertmode
+
+" set visualbell
+set editor='gvim -f +<line> <file>'
+
+" insertmode on multi-field password prompt
+" autocmd LocationChange https://www.centrum24.pl/centrum24-web/login :setlocal insertmode
+" vim: set ft=vim ts=2 sw=4 tw=78 :
+colorscheme molokai
+set! ui.key.menuAccessKeyFocuses=false
