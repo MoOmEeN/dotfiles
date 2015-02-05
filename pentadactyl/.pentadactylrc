@@ -20,3 +20,5 @@ set editor='gvim -f +<line> <file>'
 " vim: set ft=vim ts=2 sw=4 tw=78 :
 colorscheme molokai
 set! ui.key.menuAccessKeyFocuses=false
+
+set hintkeys=sdfercvjkluim;
