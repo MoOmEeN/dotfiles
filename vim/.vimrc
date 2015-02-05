@@ -36,3 +36,14 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 set completeopt-=preview
 " toggle nerd tree
 nmap <leader>d :NERDTreeToggle<CR>
+
+" vim-airline
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+
+" switching buffers with alt+(w/e)
+nnoremap <ESC>w :bprevious!<CR>
+nnoremap <ESC>e :bnext!<CR>
+
+" status line always visible
+" :set laststatus=2
