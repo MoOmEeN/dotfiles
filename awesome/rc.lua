@@ -192,42 +192,6 @@ clockicon = wibox.widget.imagebox()
 clockicon:set_image(beautiful.widget_clock)
 mytextclock = awful.widget.textclock("<span font=\"Terminus 12\"><span font=\"Terminus 9\" color=\"#DDDDFF\">%H:%M</span></span>")
 
--- Mail widget
-mygmail = wibox.widget.textbox()
-notify_shown = true
-gmail_t = awful.tooltip({ objects = { mygmail },})
-mygmailimg = wibox.widget.imagebox(beautiful.widget_mail)
-vicious.register(mygmail, vicious.widgets.gmail,
-function (widget, args)
-  notify_title = "You've got mail!"
-  notify_text = '"' .. args["{subject}"] .. '"'
-  gmail_t:set_text(args["{subject}"])
-  gmail_t:add_to_object(mygmailimg)
-  if (args["{count}"] > 0) then
-    if (notify_shown == false) then
-      if (args["{count}"] > 1) then 
-        notify_title = "You've got " .. args["{count}"] .. " new messages."
-        notify_text = 'Latest: "' .. args["{subject}"] .. '"'
-      else
-        notify_title = "You've got mail!"
-        notify_text = args["{subject}"]
-      end
-      naughty.notify({ title = notify_title, text = notify_text,
-      timeout = 7,
-      position = "top_right",
-      icon = beautiful.widget_mail_notify,
-      fg = beautiful.fg_urgent,
-      bg = beautiful.bg_urgent })
-      notify_shown = true
-    end
-    return '<span background="#313131" font="Terminus 13" rise="2000"> <span font="Terminus 9">' .. args["{count}"] .. ' </span></span>'
-  else
-    notify_shown = false
-    return ""
-  end
-end, 60)
-mygmail:buttons(awful.util.table.join(awful.button({ }, 1, function () awful.util.spawn(mail, false) end)))
-
 -- MEM widget
 memicon = wibox.widget.imagebox()
 memicon:set_image(beautiful.widget_mem)
@@ -375,9 +339,6 @@ for s = 1, screen.count() do
 --  right_layout:add(arrl_dl)
   right_layout:add(volicon)
   right_layout:add(volumewidget)
-  right_layout:add(arrl_ld)
-  right_layout:add(mygmailimg)
-  right_layout:add(mygmail)
   right_layout:add(arrl_dl)
   right_layout:add(memicon)
   right_layout:add(memwidget)
