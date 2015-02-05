@@ -11,7 +11,7 @@ au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 set clipboard=unnamedplus
 
 " indentation
-filetype indent on
+filetype plugin indent on
 set tabstop=4 "length of a tab is four spaces
 set shiftwidth=4 "width of indent
 set expandtab "expand tabs to spaces
@@ -32,3 +32,7 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 
 " ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+" removing preview window in autocompletion
+set completeopt-=preview
+" toggle nerd tree
+nmap <leader>d :NERDTreeToggle<CR>
