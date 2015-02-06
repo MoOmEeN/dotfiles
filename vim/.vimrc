@@ -47,3 +47,11 @@ nnoremap <ESC>e :bnext!<CR>
 
 " status line always visible
 " :set laststatus=2
+
+" autocmpletion
+set completeopt=longest,menuone
+" map Ctrl+Space to user defined completion + autoselect first element i from the list
+inoremap <expr> <Nul> '<C-x><C-u><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+" autoselect first element on next matching word completion
+inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
+   \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
