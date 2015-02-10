@@ -55,3 +55,6 @@ inoremap <expr> <Nul> '<C-x><C-u><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 " autoselect first element on next matching word completion
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
    \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
+" toggle tagbar
+nmap <leader>o :TagbarToggle<CR>
