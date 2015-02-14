@@ -7,8 +7,11 @@ set background=dark
 colorscheme solarized 
 
 set number "line numbers
-au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 set clipboard=unnamedplus
+" mac
+" set clipboard=unnamed
+" vmap <C-x> :!pbcopy<CR>
+" vmap <C-c> :w !pbcopy<CR><CR>
 
 " indentation
 filetype plugin indent on
@@ -44,6 +47,9 @@ let g:airline#extensions#tabline#enabled = 1
 " switching buffers with alt+(w/e)
 nnoremap <ESC>w :bprevious!<CR>
 nnoremap <ESC>e :bnext!<CR>
+" mac
+" nnoremap æ :bprevious!<CR>
+" nnoremap € :bnext!<CR>
 
 " status line always visible
 " :set laststatus=2
