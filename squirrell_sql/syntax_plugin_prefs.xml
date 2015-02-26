@@ -1,0 +1,95 @@
+<Beans>
+    <Bean Class="net.sourceforge.squirrel_sql.plugins.syntax.SyntaxPreferences">
+        <columnStyle Class="net.sourceforge.squirrel_sql.plugins.syntax.SyntaxStyle">
+            <backgroundRGB>-14671840</backgroundRGB>
+            <bold>false</bold>
+            <italic>false</italic>
+            <name>columnName</name>
+            <textRGB>-5772255</textRGB>
+        </columnStyle>
+        <commentStyle Class="net.sourceforge.squirrel_sql.plugins.syntax.SyntaxStyle">
+            <backgroundRGB>-14671840</backgroundRGB>
+            <bold>false</bold>
+            <italic>false</italic>
+            <name>comment</name>
+            <textRGB>-10329502</textRGB>
+        </commentStyle>
+        <dataTypeStyle Class="net.sourceforge.squirrel_sql.plugins.syntax.SyntaxStyle">
+            <backgroundRGB>-14671840</backgroundRGB>
+            <bold>false</bold>
+            <italic>false</italic>
+            <name>datatype</name>
+            <textRGB>-5066240</textRGB>
+        </dataTypeStyle>
+        <errorStyle Class="net.sourceforge.squirrel_sql.plugins.syntax.SyntaxStyle">
+            <backgroundRGB>-14671840</backgroundRGB>
+            <bold>false</bold>
+            <italic>false</italic>
+            <name>error</name>
+            <textRGB>-65536</textRGB>
+        </errorStyle>
+        <functionStyle Class="net.sourceforge.squirrel_sql.plugins.syntax.SyntaxStyle">
+            <backgroundRGB>-14671840</backgroundRGB>
+            <bold>false</bold>
+            <italic>false</italic>
+            <name>function</name>
+            <textRGB>-39220</textRGB>
+        </functionStyle>
+        <highlightCurrentLine>false</highlightCurrentLine>
+        <identifierStyle Class="net.sourceforge.squirrel_sql.plugins.syntax.SyntaxStyle">
+            <backgroundRGB>-14671840</backgroundRGB>
+            <bold>false</bold>
+            <italic>false</italic>
+            <name>identifier</name>
+            <textRGB>-1212600</textRGB>
+        </identifierStyle>
+        <lineNumbersEnabled>false</lineNumbersEnabled>
+        <literalStyle Class="net.sourceforge.squirrel_sql.plugins.syntax.SyntaxStyle">
+            <backgroundRGB>-14671840</backgroundRGB>
+            <bold>false</bold>
+            <italic>true</italic>
+            <name>literal</name>
+            <textRGB>-15219037</textRGB>
+        </literalStyle>
+        <operatorStyle Class="net.sourceforge.squirrel_sql.plugins.syntax.SyntaxStyle">
+            <backgroundRGB>-14671840</backgroundRGB>
+            <bold>true</bold>
+            <italic>false</italic>
+            <name>operator</name>
+            <textRGB>-1</textRGB>
+        </operatorStyle>
+        <reservedWordStyle Class="net.sourceforge.squirrel_sql.plugins.syntax.SyntaxStyle">
+            <backgroundRGB>-14671840</backgroundRGB>
+            <bold>true</bold>
+            <italic>false</italic>
+            <name>reservedWord</name>
+            <textRGB>-2283417</textRGB>
+        </reservedWordStyle>
+        <separatorStyle Class="net.sourceforge.squirrel_sql.plugins.syntax.SyntaxStyle">
+            <backgroundRGB>-14671840</backgroundRGB>
+            <bold>false</bold>
+            <italic>false</italic>
+            <name>separator</name>
+            <textRGB>128</textRGB>
+        </separatorStyle>
+        <tableStyle Class="net.sourceforge.squirrel_sql.plugins.syntax.SyntaxStyle">
+            <backgroundRGB>-14671840</backgroundRGB>
+            <bold>true</bold>
+            <italic>false</italic>
+            <name>tableName</name>
+            <textRGB>-15560509</textRGB>
+        </tableStyle>
+        <textLimitLineVisible>false</textLimitLineVisible>
+        <textLimitLineWidth>80</textLimitLineWidth>
+        <useCopyAsRtf>false</useCopyAsRtf>
+        <usePlainTextControl>false</usePlainTextControl>
+        <useRSyntaxTextArea>true</useRSyntaxTextArea>
+        <whiteSpaceStyle Class="net.sourceforge.squirrel_sql.plugins.syntax.SyntaxStyle">
+            <backgroundRGB>-14671840</backgroundRGB>
+            <bold>false</bold>
+            <italic>false</italic>
+            <name>whitespace</name>
+            <textRGB>-16777216</textRGB>
+        </whiteSpaceStyle>
+    </Bean>
+</Beans>
