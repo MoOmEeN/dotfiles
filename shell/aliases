@@ -1,0 +1,4 @@
+# git checkout changed file
+alias gcf="git checkout \$(gst -s | cut -c4- | pick)"
+# remove changed file
+alias grf="rm \$(gst -s | cut -c4- | pick)"
