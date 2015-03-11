@@ -64,3 +64,7 @@ inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
 
 " toggle tagbar
 nmap <leader>o :TagbarToggle<CR>
+
+" splits
+set splitbelow
+set splitright
