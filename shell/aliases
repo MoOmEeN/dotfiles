@@ -2,3 +2,6 @@
 alias gcf="git checkout \$(gst -s | cut -c4- | pick)"
 # remove changed file
 alias grf="rm \$(gst -s | cut -c4- | pick)"
+# git add changed file
+alias gaf="git add \$(gst -s | cut -c4- | pick)"
+
