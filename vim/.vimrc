@@ -52,7 +52,7 @@ nnoremap <ESC>e :bnext!<CR>
 " nnoremap € :bnext!<CR>
 
 " status line always visible
-" :set laststatus=2
+:set laststatus=2
 
 " autocmpletion
 set completeopt=longest,menuone
