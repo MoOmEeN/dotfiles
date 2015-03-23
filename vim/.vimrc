@@ -68,3 +68,7 @@ nmap <leader>o :TagbarToggle<CR>
 " splits
 set splitbelow
 set splitright
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
