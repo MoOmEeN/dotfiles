@@ -48,8 +48,8 @@ let g:airline#extensions#tabline#enabled = 1
 nnoremap <ESC>w :bprevious!<CR>
 nnoremap <ESC>e :bnext!<CR>
 " mac
-" nnoremap æ :bprevious!<CR>
-" nnoremap € :bnext!<CR>
+" nnoremap ∑ :bprevious!<CR>
+" nnoremap ę :bnext!<CR>
 
 " status line always visible
 :set laststatus=2
