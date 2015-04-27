@@ -162,7 +162,7 @@ freedesktop.utils.icon_theme = 'Faenza' -- look inside /usr/share/icons/, defaul
 require('freedesktop.menu')
 
 
-menu_items = freedesktop.menu.new()
+menu_items = {}--freedesktop.menu.new()
 myawesomemenu = {
    { "manual", terminal .. " -e man awesome", freedesktop.utils.lookup_icon({ icon = 'help' }) },
    { "edit config", editor_cmd .. " " .. awful.util.getdir("config") .. "/rc.lua", freedesktop.utils.lookup_icon({ icon = 'package_settings' }) },
