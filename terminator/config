@@ -1,5 +1,4 @@
 [global_config]
-  window_state = hidden
   suppress_multiple_term_dialog = True
 [keybindings]
   new_tab = <Primary>t
@@ -13,6 +12,7 @@
     use_system_font = False
     foreground_color = "#839496"
     scroll_on_output = False
+    show_titlebar = False
     font = Meslo LG S for Powerline 10
     background_color = "#002b36"
 [layouts]
@@ -20,7 +20,6 @@
     [[[child1]]]
       type = Terminal
       parent = window0
-      profile = default
     [[[window0]]]
       type = Window
       parent = ""
