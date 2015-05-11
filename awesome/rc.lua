@@ -39,11 +39,11 @@ run_once("unclutter -idle 10")
 run_once("xcompmgr &")
 run_once("conky -c ~/.conky/conkyrc_grey")
 run_once("xflux -l 46.050569 -g 14.515171")
-run_once("parcellite")
+run_once("clipit")
 run_once("volumeicon")
 run_once("dropbox start")
 run_once("gnome-settings-daemon &")
-run_once("nm-applet")
+run_once("wicd-client")
 -- }}}
 
 -- {{{ Localization
@@ -328,23 +328,24 @@ for s = 1, screen.count() do
 
   -- Widgets that are aligned to the upper right
   local right_layout = wibox.layout.fixed.horizontal()
---  if s == 2 or screen.count() == 1 then right_layout:add(wibox.widget.systray()) end
-  if s == 1 then right_layout:add(wibox.widget.systray()) end
+  if s == 2 or screen.count() == 1 then right_layout:add(wibox.widget.systray()) end
+--  if s == 1 then right_layout:add(wibox.widget.systray()) end
 --  right_layout:add(wibox.widget.systray()) 
   right_layout:add(spr)
-  right_layout:add(arrl)
-  --right_layout:add(arrl_ld)
+--  right_layout:add(arrl)
+-- right_layout:add(arrl_ld)
   --right_layout:add(mpdicon)
   --right_layout:add(mpdwidget)
 --  right_layout:add(arrl_dl)
-  right_layout:add(volicon)
-  right_layout:add(volumewidget)
+--  right_layout:add(volicon)
+--  right_layout:add(volumewidget)
+  right_layout:add(arrl_ld)
+  right_layout:add(cpuicon)
+  right_layout:add(cpuwidget)
   right_layout:add(arrl_dl)
   right_layout:add(memicon)
   right_layout:add(memwidget)
-  right_layout:add(arrl_ld)
-  right_layout:add(cpuicon)
-  right_layout:add(cpuwidget)    
+    
 --  right_layout:add(arrl_dl)
 --  right_layout:add(tempicon)
 --  right_layout:add(tempwidget)
