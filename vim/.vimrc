@@ -43,6 +43,7 @@ nmap <leader>d :NERDTreeToggle<CR>
 " vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='luna'
 
 " switching buffers with alt+(w/e)
 nnoremap <ESC>w :bprevious!<CR>
