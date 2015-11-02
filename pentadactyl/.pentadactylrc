@@ -18,7 +18,14 @@ set editor='gvim -f +<line> <file>'
 " insertmode on multi-field password prompt
 " autocmd LocationChange https://www.centrum24.pl/centrum24-web/login :setlocal insertmode
 " vim: set ft=vim ts=2 sw=4 tw=78 :
-colorscheme molokai
+colorscheme solarized-dark
 set! ui.key.menuAccessKeyFocuses=false
 
 set hintkeys=sdfercvjkluim;
+set guioptions=sT
+
+" faster jk scrolling
+map -b j 3j
+map -b k 3k
+
+hi FontFixed -a font-size:13px !important; font-family:"Menlo" !important;
