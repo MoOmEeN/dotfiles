@@ -28,4 +28,4 @@ set guioptions=sT
 map -b j 3j
 map -b k 3k
 
-hi FontFixed -a font-size:13px !important; font-family:"Menlo" !important;
+hi FontFixed -a font-size:13px !important; font-family:"Meslo LG L" !important;
