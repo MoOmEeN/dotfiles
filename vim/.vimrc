@@ -46,11 +46,11 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='luna'
 
 " switching buffers with alt+(w/e)
-nnoremap <ESC>w :bprevious!<CR>
-nnoremap <ESC>e :bnext!<CR>
+" nnoremap <ESC>w :bprevious!<CR>
+" nnoremap <ESC>e :bnext!<CR>
 " mac
-" nnoremap ∑ :bprevious!<CR>
-" nnoremap ę :bnext!<CR>
+nnoremap ∑ :bprevious!<CR>
+nnoremap ę :bnext!<CR>
 
 " status line always visible
 :set laststatus=2
