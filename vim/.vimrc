@@ -7,9 +7,14 @@ set background=dark
 colorscheme solarized 
 
 set number "line numbers
-set clipboard=unnamedplus
+
+if system('uname -s') == "Darwin\n"
+    set clipboard=unnamed "OSX
+else
+    set clipboard=unnamedplus "Linux
+endif
+
 " mac
-" set clipboard=unnamed
 " vmap <C-x> :!pbcopy<CR>
 " vmap <C-c> :w !pbcopy<CR><CR>
 
