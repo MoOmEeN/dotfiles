@@ -69,7 +69,16 @@ nmap <leader>o :TagbarToggle<CR>
 " splits
 set splitbelow
 set splitright
+" split with pipe and hyphen
+nnoremap <silent> <C-w>- :split<CR>
+nnoremap <silent> <C-w><Bar> :vsplit<CR>
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" vim-slime
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
+
+set shell=/bin/sh " set default shell
