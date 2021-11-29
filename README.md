@@ -10,7 +10,7 @@ ln -s /Users/radek/repos/dotfiles/tmux/tmux.conf /Users/radek/.tmux.conf
 # alacritty
 ```
 brew tap homebrew/cask-fonts
-brew install --cask font-meslolg-nerd-font
+brew install font-meslo-lg-nerd-font
 ln -s /Users/radek/repos/dotfiles/alacritty/alacritty.yml /Users/radek/.config/alacritty/alacritty.yml
 ```
 
