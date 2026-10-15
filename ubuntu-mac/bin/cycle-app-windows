@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Focus the next (or --prev) window of the focused app, like macOS Cmd+`.
+set -euo pipefail
+
+focused=$(wlrctl toplevel list state:active | head -n1)
+[[ -n "$focused" ]] || exit 0
+app_id=${focused%%: *}
+current_title=${focused#*: }
+
+mapfile -t titles < <(wlrctl toplevel list "app_id:$app_id" | sed "s/^[^:]*: //")
+count=${#titles[@]}
+(( count > 1 )) || exit 0
+
+idx=0
+for i in "${!titles[@]}"; do
+    if [[ "${titles[$i]}" == "$current_title" ]]; then idx=$i; break; fi
+done
+
+if [[ "${1:-}" == "--prev" ]]; then
+    next=$(( (idx - 1 + count) % count ))
+else
+    next=$(( (idx + 1) % count ))
+fi
+
+wlrctl toplevel focus "app_id:$app_id" "title:${titles[$next]}"

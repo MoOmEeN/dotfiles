@@ -1,0 +1,43 @@
+# macOS-style mappings shared by default.conf and mxkeys.conf.
+# Layers are named after the key's default function: [control] = Cmd held, [alt] = Option held.
+# Cmd+` uses 102nd: the `~ key next to left Shift on a UK MacBook.
+
+[main]
+# Cmd acts as Ctrl (Cmd+C, Cmd+V, ...), Ctrl acts as Super
+control = layer(meta)
+meta = layer(control)
+
+[control]
+left = home
+right = end
+up = C-home
+down = C-end
+backspace = macro(S-home backspace)
+q = A-f4
+# app switcher; stays open while Cmd is held
+tab = swapm(app_switch_state, M-tab)
+# next window of the same app (Budgie shortcut -> cycle-app-windows)
+102nd = A-f6
+
+[app_switch_state:M]
+tab = M-tab
+102nd = S-M-tab
+
+[control+shift]
+[ = C-S-tab
+] = C-tab
+left = S-home
+right = S-end
+up = C-S-home
+down = C-S-end
+102nd = S-A-f6
+
+[alt]
+left = C-left
+right = C-right
+backspace = C-backspace
+delete = C-delete
+
+[alt+shift]
+left = C-S-left
+right = C-S-right

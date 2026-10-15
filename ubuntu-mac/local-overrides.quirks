@@ -1,0 +1,5 @@
+# Treat keyd's virtual keyboard as built-in so touchpad disable-while-typing works.
+[keyd virtual keyboard]
+MatchUdevType=keyboard
+MatchName=keyd virtual keyboard
+AttrKeyboardIntegration=internal
